@@ -1,0 +1,37 @@
+
+
+.Weather .submit{
+    background-color: #24527a;
+    color: white;
+    padding: 6px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
+    transition: all 200ms ease-in-out;
+}
+
+.Weather .submit:hover
+{
+  background-color: #2c6495;
+}
+
+.Weather li{
+    font-size: 16px;
+    list-style-type: none;
+    padding-left: 5px;
+    margin: 0;
+  }
+
+.Weather ul {
+    padding: 0;
+}
+
+.Weather .unit{
+    font-size: 30px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 10px;
+  }

@@ -1,11 +1,14 @@
 
+import React from "react";
 import './App.css';
+
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
-      
-      <h1>react</h1> 
+      <Weather defaultcity="london" />
+      <footer> <a href="https://github.com/ilenia-n/weather-app-react" target="_blank" rel="noopener noreferrer" >Open-source code </a>by Ilenia Natoli</footer>
     </div>
   );
 }
