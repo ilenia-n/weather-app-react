@@ -6,8 +6,8 @@ function Weather(props){
     return (
         <div className="Weather"> 
             <div className="container box">
-            <div className="row">
-            <div className="col-8">
+            <div className="row p-4">
+            <div className="col-11">
                 <form>
                     <div className="input-group mb-3">
                         <input type="text"  id ="cityInput" className="form-control" autoFocus placeholder="Enter a city..." />
@@ -18,19 +18,21 @@ function Weather(props){
         </div>
         <div className="row">
             <div className="col-6">
-                <h2 className="text-capitalize">{props.defaultcity}</h2>
+                
                 <ul>
+                    <li><h1 className="text-capitalize">{props.defaultcity}</h1></li>
                     <li>Last updated:</li>
                     <li id="weatherDescription">Cloudy</li>
                 </ul>
                 <img src="https://duckduckgo.com/assets/weather/icons/partly-cloudy-day.svg" alt="Cloudy" />
             </div>
             <div className="col-6">
-                <h1 className="mb-5">20<span className="unit">°C</span></h1>
+                
                 <ul>
-                    <li>Feels like: <span id="feelsLike">19</span>°</li>
-                    <li>Humidity: <span id="humidity">73</span></li>
-                    <li>Wind: <span id="windSpeed">10</span> mph</li>
+                    <li className="temp-heading">20<span className="unit">°C</span></li>
+                    <li>Feels like: 19°</li>
+                    <li>Humidity: 73%</li>
+                    <li>Wind: 10 mph</li>
                 </ul>
             </div>
         </div>

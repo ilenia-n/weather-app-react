@@ -26,12 +26,21 @@
   }
 
 .Weather ul {
-    padding: 0;
+    padding: 30px;
 }
 
 .Weather .unit{
     font-size: 30px;
     vertical-align: top;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
   }
+
+  .Weather .temp-heading{
+    font-weight: bold;
+    font-size: 80px;
+    padding: 0 0 15px 0;
+    margin-bottom: 50px;
+  }
+
+ 
