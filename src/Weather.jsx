@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import Time from "./Time"
 import axios from "axios";
 
 
@@ -20,6 +21,7 @@ function Weather() {
 
 
 if (weatherData.load){
+    console.log(weatherData.time)
 return (
     <div className="Weather">
         <div className="container box">
@@ -38,7 +40,7 @@ return (
 
                     <ul>
                         <li><h1 className="text-capitalize">London</h1></li>
-                        <li>Last updated:</li>
+                        <li>Last updated: <Time /></li>
                         <li>{weatherData.description}</li>
                     </ul>
                     <img src="https://duckduckgo.com/assets/weather/icons/partly-cloudy-day.svg" alt="Cloudy" />
