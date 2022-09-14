@@ -26,7 +26,8 @@
   }
 
 .Weather ul {
-    padding: 30px;
+  padding-left: 15px;
+  padding-top: 30px;
 }
 
 .Weather .unit{
@@ -43,4 +44,6 @@
     margin-bottom: 50px;
   }
 
- 
+ .Weather .second-list{
+   padding-left: 50px;
+ }

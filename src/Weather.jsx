@@ -47,7 +47,7 @@ return (
                 </div>
                 <div className="col-6">
 
-                    <ul>
+                    <ul className="second-list">
                         <li className="temp-heading">{weatherData.temp}<span className="unit">°C</span></li>
                         <li>Feels like: {weatherData.feel}°</li>
                         <li>Humidity: {weatherData.humidity}%</li>
