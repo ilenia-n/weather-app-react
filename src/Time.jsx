@@ -1,5 +1,3 @@
-
-
 function Time() {
     let now = new Date();
     let weekday = now.getDay();
