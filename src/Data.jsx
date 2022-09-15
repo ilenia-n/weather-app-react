@@ -1,7 +1,12 @@
 import React from "react";
-import Time from "./Time"
+import Time from "./Time";
 
 function Data(props) {
+
+let icon = [props.results.icon];   
+
+  
+console.log(icon)
     return (
         <div className="Data">
             <div className="row">
@@ -12,7 +17,7 @@ function Data(props) {
                         <li>Last updated: <Time /></li>
                         <li>{props.results.description}</li>
                     </ul>
-                    <img src="https://duckduckgo.com/assets/weather/icons/partly-cloudy-day.svg" alt="Cloudy" />
+                    <img src={require(`./assets/${icon}.png`)} alt={props.results.description} />
                 </div>
                 <div className="col-6">
 

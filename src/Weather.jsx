@@ -13,10 +13,11 @@ function Weather() {
             load: true,
             description: response.data.weather[0].description,
             temp: Math.round(response.data.main.temp),
-            wind: Math.round(response.data.wind.spee),
+            wind: Math.round(response.data.wind.speed),
             feel: Math.round(response.data.main.feels_like),
             humidity: response.data.main.humidity,
-            city: response.data.name
+            city: response.data.name,
+            icon: response.data.weather[0].icon
         });
         }
 
