@@ -1,12 +1,11 @@
 import React from "react";
 import Time from "./Time";
+import Unit from "./Unit";
 
 function Data(props) {
 
 let icon = [props.results.icon];   
 
-  
-console.log(icon)
     return (
         <div className="Data">
             <div className="row">
@@ -22,7 +21,7 @@ console.log(icon)
                 <div className="col-6">
 
                     <ul className="second-list">
-                        <li className="temp-heading">{props.results.temp}<span className="unit">°C</span></li>
+                        <li className="temp-heading"><Unit temp={props.results.temp} /></li>
                         <li>Feels like: {props.results.feel}°</li>
                         <li>Humidity: {props.results.humidity}%</li>
                         <li>Wind: {props.results.wind} mph</li>

@@ -28,8 +28,8 @@
   padding-top: 30px;
 }
 
-.Weather .unit{
-    font-size: 30px;
+.Weather .unitTemp{
+    font-size: 20px;
     vertical-align: top;
     display: inline-block;
     margin-top: 20px;
@@ -37,7 +37,7 @@
 
   .Weather .temp-heading{
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
     padding: 0 0 15px 0;
     margin-bottom: 50px;
   }
@@ -45,3 +45,10 @@
  .Weather .second-list{
    padding-left: 50px;
  }
+
+/* .bold{
+  font-size: 20px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 20px;
+} */
