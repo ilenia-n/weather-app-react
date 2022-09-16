@@ -28,13 +28,13 @@ function Unit(props) {
     unit === ("celsius") ?
 
       (<div>
-        {props.temp} <span className="unitTemp" > °C | <a href="/" onClick={handleFahrenheit}>°F </a></span>
+        {props.temp}<span className="unitTemp" >°C | <a href="/" onClick={handleFahrenheit}>°F </a></span>
       </div>) 
       
       :
 
       (<div >
-        {convertFahrenheit()} <span className="unitTemp" > <a href="/" onClick={handleCelsius} >°C </a>|°F </span>
+        {convertFahrenheit()}<span className="unitTemp" > <a href="/" onClick={handleCelsius} >°C </a>|°F </span>
       </div>)
   )
   }
