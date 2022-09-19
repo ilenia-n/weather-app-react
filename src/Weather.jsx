@@ -9,6 +9,7 @@ function Weather() {
     const [city, setCity] = useState("london");
 
     function showDataResults(response) {
+        
         setWeatherData({
             load: true,
             description: response.data.weather[0].description,
@@ -35,7 +36,7 @@ function Weather() {
     }
 
     function perfomResult() {
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dc51080b02acff683dbe8e4cbf69dccc&units=metric`;
+        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=dc51080b02acff683dbe8e4cbf69dccc&units=metric&exclude=hourly,daily`;
         axios(apiUrl).then(showDataResults);
     }
 
@@ -55,6 +56,7 @@ function Weather() {
                         </div>
                     </div>
                     <Data results={weatherData} />
+                    
                 </div>
             </div>
         )

@@ -1,0 +1,32 @@
+/* .Forecast {
+  text-align: center;
+} */
+
+.Forecast .week-image {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.Forecast .days-forecast{
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px 10px 3px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.Forecast .max {
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px 10px 3px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.Forecast .min {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: normal;
+}

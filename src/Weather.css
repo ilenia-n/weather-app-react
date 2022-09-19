@@ -28,6 +28,11 @@
   padding-top: 30px;
 }
 
+hr{
+  border: solid 1px #34699a;
+  margin-bottom: 30px;
+}
+
 .Weather .unitTemp{
     font-size: 20px;
     vertical-align: top;
