@@ -1,7 +1,7 @@
 import React from "react";
 import Time from "./Time";
 import Unit from "./Unit";
-import Forecast from "./Forecast";
+
 
 function Data(props) {
 
@@ -30,13 +30,8 @@ function Data(props) {
             <li>Wind: {props.results.wind} mph</li>
           </ul>
         </div>
-      </div>
-      <hr />
-      <div className="container">
-      <Forecast />
-      </div>
+      </div>     
     </div>
-
   )
 }
 
