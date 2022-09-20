@@ -1,13 +1,17 @@
 import React from "react";
 import Time from "./Time";
-import Unit from "./Unit";
+
 
 
 function Data(props) {
 
   let icon = [props.results.icon];
   let imgIcon = require(`./assets/${icon}.png`)
- 
+
+  function getCelsius() {
+    let celsius = Math.round(props.results.temp);
+    return celsius;
+  }
 
   return (
     <div className="Data">
@@ -24,13 +28,13 @@ function Data(props) {
         <div className="col-6">
 
           <ul className="second-list">
-            <li className="temp-heading"><Unit temp={props.results.temp} /></li>
+            <li className="temp-heading">{getCelsius()}<span className="unitTemp">°C</span></li>
             <li>Feels like: {props.results.feel}°</li>
             <li>Humidity: {props.results.humidity}%</li>
             <li>Wind: {props.results.wind} mph</li>
           </ul>
         </div>
-      </div>     
+      </div>
     </div>
   )
 }
