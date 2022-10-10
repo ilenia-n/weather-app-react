@@ -3,7 +3,7 @@
 This is my first React app, which design is based on my vanilla JS weather app.  
 It is built using HTML, CSS, Bootstrap and React. It has a live API integration with the OpenWeather API.
 
-# Link and Screenshots
+# Link and Screenshot
 
 Try it out at https://harmonious-sprinkles-6f8509.netlify.app/
 
